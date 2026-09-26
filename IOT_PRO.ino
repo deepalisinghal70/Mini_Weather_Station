@@ -1,5 +1,5 @@
 
-//  SMART WEATHER & HAZARD MONITORING STATION
+//  MINI WEATHER STATION
 // Sensors : DHT11 (temp + humidity, digital) on Pin 7
 //           Gas sensor (analog) on A1
 // Outputs : 16x2 I2C LCD, Buzzer on Pin 8, Safe-zone LED on Pin 9
@@ -21,7 +21,7 @@ DHT dht(DHTPIN, DHTTYPE); // Creates a "dht" object all readings will be pulled 
 // Other Pins 
 const int gasPin    = A0;  // Gas sensor analog output, the more voltage output the more gas detected
 const int buzzerPin = 8;   // Buzzer for hazard alerts
-const int ledPin    = 9;   // Safe-zone LED (7)
+const int ledPin    = 9;   // Safe-zone LED (D9)
 
 // Hazard Thresholds 
 const float TEMP_THRESHOLD = 35.0;   // °C, any reading above 35 is hazard
@@ -37,7 +37,7 @@ void setup() {
 
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW);      // LED off initially, sends output signal
-// change to high if led shows reverse working 
+
 
   lcd.setCursor(0, 0);  // Move cursor to column 0, row 0 (top-left)
   lcd.print(" Weather Station ");
@@ -97,7 +97,7 @@ void loop() {
   } else {
     // ----- SAFE STATE -----
     noTone(buzzerPin);           // Make sure buzzer is silent
-    digitalWrite(ledPin, HIGH);  // Safe LED on, do low if reversed 
+    digitalWrite(ledPin, HIGH);  // Safe LED on
 
     lcd.setCursor(0, 0);
     lcd.print("T:");
