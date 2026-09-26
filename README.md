@@ -3,7 +3,9 @@ An Arduino-based environmental monitoring system that continuously tracks
 temperature, humidity, and gas concentration, displays live readings on an
 LCD, and triggers immediate visual and audio alerts when a safe threshold
 is crossed.
+
 Working Project Video: https://drive.google.com/file/d/1H6hiaLtaL_GvHXFjcUX0hNfIz7xoqz9-/view?usp=drive_link
+
 Tinkercad Stimulation: https://www.tinkercad.com/things/hLbhyswumdF-final-mse-1?sharecode=1MRBScqvQEcPyrvyUtW-kIsaw3x5rbwTijaiz8Shk8c
 
 ## Problem Statement
