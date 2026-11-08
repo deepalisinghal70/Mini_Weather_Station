@@ -2,11 +2,11 @@
 
 A Wi-Fi connected environmental monitoring and gas safety system built on an ESP8266 NodeMCU. It continuously measures temperature, humidity, gas level, and rain, shows live readings on an LCD and a Blynk IoT dashboard, sounds a local buzzer alert, and sends email notifications when a hazard is detected.
 
-This is **Version 2** of the [Mini Weather Station](https://github.com/deepalisinghal70/Mini_Weather_Station) project, which was a standalone Arduino Uno prototype.
+This is **Version 2** of the Mini Weather Station project, which was a standalone Arduino Uno prototype.
 
 ---
 
-## 🚀 What's New in Version 2
+##  What's New in Version 2
 
 - **ESP8266 NodeMCU Integration:** Replaced the Arduino Uno to add built-in Wi-Fi connectivity.
 - **Rain Hazard Monitoring:** Added a rain sensor module; rain detection triggers a hazard alert alongside high temperature and high gas levels.
@@ -17,7 +17,7 @@ This is **Version 2** of the [Mini Weather Station](https://github.com/deepalisi
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 **Sense ➔ Think ➔ Alert ➔ Notify**
 
@@ -51,7 +51,7 @@ This is **Version 2** of the [Mini Weather Station](https://github.com/deepalisi
 
 ---
 
-## 🛠️ Hardware Components & Circuit Design
+##  Hardware Components & Circuit Design
 
 ### Components List
 
@@ -90,19 +90,11 @@ This is **Version 2** of the [Mini Weather Station](https://github.com/deepalisi
 
 ### Voltage Divider Circuit (MQ-135 to ESP8266)
 
-The ESP8266 analog pin (`A0`) supports an input voltage range of **0V – 3.3V**, whereas the MQ-135 sensor outputs up to **5V**. A voltage divider is required to step down the signal:
-
-```text
-MQ-135 AO Output ---[ 220 Ω ]---+---[ 220 Ω ]--- GND
-                                |
-                                A0 (ESP8266)
-```
-
-> **Note:** Because the output voltage is scaled down by half, reading values will be lower compared to an Arduino Uno. Adjust `GAS_THRESHOLD` in your code after taking baseline readings in clean air.
+The ESP8266 analog pin (`A0`) supports an input voltage range of **0V – 3.3V**, whereas the MQ-135 sensor outputs up to **5V**. A voltage divider is required to step down the signal.
 
 ---
 
-## 💻 Software Setup & Installation
+##  Software Setup & Installation
 
 ### Required Software & Libraries
 
@@ -183,35 +175,4 @@ char pass[] = "YOUR_WIFI_PASSWORD";
 
 ---
 
-## 🔮 Future Enhancements
-
-- [ ] Automatic relay integration for exhaust fan activation during high gas/heat events.
-- [ ] Integration of ambient light (LDR) and air quality index (AQI) sensors.
-- [ ] Analytics integration for long-term historical environmental patterns.
-
----
-
-## ⚠️ Disclaimer
-
-The MQ-135 gas sensor used in this project is intended for educational, experimental, and prototyping purposes only. It is not a certified commercial safety device, and this project should **not** be relied upon as a primary life-safety monitor in critical environments.
-
----
-
-## 🔗 Project Resources & Links
-
-- **Version 1 (Arduino Uno):** [Mini Weather Station Repository](https://github.com/deepalisinghal70/Mini_Weather_Station)
-- **Article / Walkthrough:** *[Link to your Medium Article]*
-- **Video Demonstration:** *[Link to your Demo Video]*
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 👤 Author
-
-**Deepali Singhal**
-- GitHub: [@deepalisinghal70](https://github.com/deepalisinghal70)
+alisinghal70)
