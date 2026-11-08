@@ -3,6 +3,7 @@
 A Wi-Fi connected environmental monitoring and gas safety system built on an ESP8266 NodeMCU. It continuously measures temperature, humidity, gas level, and rain, shows live readings on an LCD and a Blynk IoT dashboard, sounds a local buzzer alert, and sends email notifications when a hazard is detected.
 
 This is **Version 2** of the Mini Weather Station project, which was a standalone Arduino Uno prototype.
+
 Check the working video: https://drive.google.com/file/d/17JFmhZx7Sc-9rU59iMuyIbMWMtnaDthE/view?usp=drive_link
 
 ---
