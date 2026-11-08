@@ -1,4 +1,4 @@
-# Mini Weather Station
+# Mini Weather Station (Version 1)
 An Arduino-based environmental monitoring system that continuously tracks
 temperature, humidity, and gas concentration, displays live readings on an
 LCD, and triggers immediate visual and audio alerts when a safe threshold
