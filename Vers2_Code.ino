@@ -4,9 +4,9 @@
 // Outputs : 16x2 I2C LCD, buzzer, safe-zone LED, Blynk dashboard + notifications
 
 // Blynk template details (must be before the includes)
-#define BLYNK_TEMPLATE_ID   "TMPL35XOIS0Oe"
-#define BLYNK_TEMPLATE_NAME "WEATHER STAT"
-#define BLYNK_AUTH_TOKEN    "tvybTnMnI_q_tPZGUev3Gf7fWX88HKz7"
+#define BLYNK_TEMPLATE_ID   "Temp_Id"
+#define BLYNK_TEMPLATE_NAME "Temp_Name"
+#define BLYNK_AUTH_TOKEN    "Auth_Token"
 #define BLYNK_PRINT Serial
 
 #include <ESP8266WiFi.h>          // WiFi for the ESP8266
@@ -15,10 +15,10 @@
 #include <LiquidCrystal_I2C.h>    // 16x2 I2C LCD
 #include <DHT.h>                  // DHT11 sensor
 
-char ssid[] = "Airtel_rite_1564";       // Must be a 2.4 GHz network
-char pass[] = "RRR@1564";
+char ssid[] = "Wifi_Name";      
+char pass[] = "Wifi_Pass";
 
-LiquidCrystal_I2C lcd(0x27, 16, 2);   // Try 0x3F if the screen stays blank
+LiquidCrystal_I2C lcd(0x27, 16, 2);   
 
 // ---------- Pins ----------
 #define DHTPIN D5                     // DHT11 data pin
