@@ -4,7 +4,7 @@ A Wi-Fi connected environmental monitoring and gas safety system built on an ESP
 
 This is **Version 2** of the Mini Weather Station project, which was a standalone Arduino Uno prototype.
 
-Check the working video: https://drive.google.com/file/d/17JFmhZx7Sc-9rU59iMuyIbMWMtnaDthE/view?usp=drive_link
+Check the working video: [https://drive.google.com/file/d/17JFmhZx7Sc-9rU59iMuyIbMWMtnaDthE/view?usp=drive_link](https://drive.google.com/file/d/1buB2_SkbtQ94rDZY5cvFW6CSxAcqyM8W/view?usp=sharing)
 
 ---
 
